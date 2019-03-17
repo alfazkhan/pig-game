@@ -1,0 +1,20 @@
+.currentScore{
+    background-color: #ED553B; 
+    color: white;
+}
+
+.section{
+    height: 300px;
+}
+
+.active{
+    background-color: #FFEEAD;
+}
+
+.active h1{
+    color: #CC2A36;
+}
+
+.hidden{
+    visibility: hidden;
+}

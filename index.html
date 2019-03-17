@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Pig Game</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body style="background-image:url(back.jpg);
+    background-size: cover;
+    background-position: center;">
+        <div class="container">
+            <div style="height: 250px;margin-top: 30px;" class="well well-sm">
+                <h1 style="text-align: center"><ul>Rules</ul></h1>
+                <p>- The game has 2 players, playing in rounds</p>
+                <p>- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score</p>
+                <p>- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn</p>
+                <p>- The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn</p>
+                <p>- The first player to reach 50 points on GLOBAL score wins the game</p>
+            </div>
+            <div class="row">
+                <!-- Player 1 Section -->
+                <div class="col-lg-5">
+                    <div class="well well-lg section active" id="playerSection-0">
+                        <h1 style="text-align: center" id="player-0">Player 1</h1>
+                        <hr style="border: 1px solid grey">
+                        <h2 id="total-0" style="text-align: center">0</h2>
+                        <div style="height: 50px"></div>
+                        <div class="currentScore well well-sm col-xs-offset-5 col-xs-2">
+                            <h4 id="current-0" style="text-align: center">0</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dice Section -->
+                <div class="col-lg-2">
+                    <div class="btn-block btn-lg btn-success" id="btn-new" style="text-align: center"><i class="ion-ios-plus-outline"></i>&nbsp;&nbsp;New Game</div>
+                    <br><br><br>
+                   <img src="dice-1.jpg" id="dice" class="hidden col-lg-offset-2 col-lg-8" style="align-content: center"> 
+                </div>
+                
+                <!-- Player 2 Section -->
+                <div class="col-lg-5">
+                    <div class="well well-lg section" id="playerSection-1">
+                        <h1 style="text-align: center" id="player-1">Player 2</h1>
+                        <hr style="border: 1px solid grey">
+                        <h2 id="total-1" style="text-align: center">0</h2>
+                        <div style="height: 50px"></div>
+                        <div class="currentScore well well-sm col-xs-offset-5 col-xs-2">
+                            <h4 id="current-1" style="text-align: center">0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-offset-5">
+                <div class="btn btn-lg btn-info col-lg-3" id="btn-roll"><i class="ion-ios-loop">&nbsp;&nbsp;Roll</i></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-5">
+                <div class="btn btn-lg btn-danger col-lg-3" id="btn-hold"><i class="ion-ios-download-outline">&nbsp;&nbsp;Hold</i></div>
+            </div>
+        </div>
+        
+    </body>
+    <script src='app.js'>
+    </script>
+</html>
